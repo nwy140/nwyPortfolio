@@ -1,786 +1,777 @@
-
 <!DOCTYPE html>
-<html style="background-color: #00d1b2">
- <!-- app dev hexadecimals colors :https://github.com/nwy140/GieptionTuts/blob/master/LazerApps/Weather/app/src/main/res/values/colors.xml-->
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nwy's Portfolio</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.7.2-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+  <!-- <link href="https://unpkg.com/bulma-fluent@0.3.13/css/bulma.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="../css/personal.css">
+  <script async type="text/javascript" src="../js/bulma.js"></script>
+</head>
 
-    <title>Air Pollution Data Analysis Web Report</title>
-    <link rel="stylesheet" href="https://rawgit.com/mrmrs/colors/master/css/colors.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">    
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar is-link is-fixed-top">
+    <div class="navbar-brand">
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
 
-    
-<!-- Must include 
-Introduction ⚒
-Hypothesis ⚒
-Data Set ⚒
-Data Analysis ⚒
-Hypothesis 2
-▞ Outcomes of the test
-Conclusion
-Data Science Report Credits
--->
-
-  <body >
-<!--navbar-->
-    <nav class="navbar is-fixed-top is-primary">
-      <div class="container">
-        <div class="navbar-brand">
-          <a class="navbar-item" href = "#">
-            <img src="https://i.imgur.com/0CWTqfM.png" alt="Pollution Logo" ></a>
-          <a class="navbar-item" href="#" style="font-weight:bold;">
-<span class="subtitle has-text-white-ter" style="font-family: Times">Air Pollution Web Report</span></a>
-          <span class="navbar-burger burger" data-target="navMenu">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div id="navbarExampleTransparentExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#about">
+          <span class="icon">
+            <i class="fas fa-info"></i>
           </span>
+          <span>About</span>
+        </a>
+        <a class="navbar-item" href="#services">
+          <span class="icon">
+            <i class="fas fa-bars"></i>
+          </span>
+          <span>Services</span>
+        </a>
+        <a class="navbar-item" href="#resume">
+          <span class="icon">
+            <i class="fas fa-file-alt"></i>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a class="navbar-item" href="#portfolio">
+          <span class="icon">
+            <i class="fas fa-th-list"></i>
+          </span>
+          <span>Portfolio</span>
+        </a>
+        <a class="navbar-item" href="#contact">
+          <span class="icon">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar">
+    <div class="hero-body">
+      <div class="container">Hello! I am
+        <h1 class="title is-1">
+          Ng Wei Yuen
+        </h1>
+        <h2 class="subtitle is-3">
+          Hobbyist Game Developer
+        </h2>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <!-- Title -->
+    <div class="section-heading">
+      <h3 class="title is-2">About Me</h3>
+      <h4 class="subtitle is-5">My Catch Phrase</h4>
+      <div class="container">
+        <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns has-same-height is-gapless">
+      <div class="column">
+        <!-- Profile -->
+        <div class="card">
+          <div class="card-content">
+            <h3 class="title is-4">Contact Information</h3>
+
+            <div class="content">
+              <table class="table-profile">
+                <tr>
+                  <th colspan="1"></th>
+                  <th colspan="2"></th>
+                </tr>
+
+                <tr>
+                  <td>Phone:</td>
+                  <td>+600132398323</td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td>nwy140@gmail.com</td>
+                </tr>
+              </table>
+            </div>
+            <br>
+            <div class="buttons has-addons is-centered">
+              <a href="https://github.com/nwy140" class="button is-link fab fa-github"></a>
+              <a href="https://linkedin.com/in/ng-wei-yuen-9a0a72145/" class="button is-link fab fa-linkedin-in">  &nbsp</a>
+              <a href="https://www.facebook.com/ng.yuen.77" class="button is-link fa fa-facebook"> &nbsp</a>
+
+            </div>
+          </div>
         </div>
-        <div id="navMenu" class="navbar-menu">
-          <div class="navbar-end">
-            <a href="#" class="navbar-item ">
-              <span><i class="fas fa-home"> </i></span>&nbsp Home</a>
-            <a href="#Introduction" class="navbar-item "> Introduction</a>
-            <a href="#hope" class="navbar-item "><i class="fas fa-book"></i> &nbspHypothesis</a>
-            <a href="#Data Set" class="navbar-item ">Data Set</a>
-            <div class="navbar-item dropdown">
-              <div class="dropdown-trigger" >
-                <button class="button is-primary" aria-haspopup="true" aria-controls="dropdown-menu">
-                  <span><i class="fas fa-file"></i>  &nbspAnalysis  </span>
-                  <span class="icon is-small">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu " id="dropdown-menu" role="menu">
-                <div class="dropdown-content">
-                  <a href="#Hypothesis 1" class="dropdown-item">
-                    Hypothesis 1</a>
-                  <hr class="dropdown-divider">
-                  <a href="#Hypothesis 2" class="dropdown-item">
-                    Hypothesis 2
-                  </a>                  
+      </div>
+      <div class="column">
+        <!-- Profile picture -->
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://scontent.fkul14-1.fna.fbcdn.net/v/t1.0-9/17191338_1379355368824389_8054636003247144280_n.jpg?_nc_cat=107&_nc_ht=scontent.fkul14-1.fna&oh=a689929037e88a325fb3bc1e5c671070&oe=5C83F3E6" alt="Placeholder image">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!-- Skills -->
+        <div class="card">
+          <div class="card-content skills-content">
+            <h3 class="title is-4">Skills</h3>
+            <div class="content">
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>JavaScript:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
+                    </p>
+                  </div>
                 </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Vue.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Node.js:</strong>
+                      <br>
+                      <progress class="progress is-primary" value="75" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>HTML5/CSS3</strong>
+                      <br>
+                      <progress class="progress is-primary" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Databases</strong>
+                      <br>
+                      <progress class="progress is-primary" value="66" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills tags -->
+  <!-- <br>
+        <div class="tags custom-tags">
+          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
+            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
+            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
+            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
+            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
+            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
+            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
+        </div> -->
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-heading">
+      <h3 class="title is-2">Services</h3>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <div class="content">
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section class="section" id="resume">
+    <div class="section-heading">
+      <h3 class="title is-2">Resume</h3>
+      <h4 class="subtitle is-5">More about my past</h4>
+      <a href="#" class="button is-link is-medium">
+        <span class="icon">
+          <i class="fas fa-file-alt"></i>
+        </span>
+        <span>Download My Resume</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Portfolio</h3>
+        <h4 class="subtitle is-5">My latest works</h4>
+      </div>
+      <br>
+
+      <div class="container portfolio-container">
+        <div class="columns">
+          <div class="column is-4">
+            <!-- admin -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Admin <small>(Light)</small></span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">WIP</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/admin.png" alt="Admin template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/admin.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- cards -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Cards</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/cards.png" alt="Cards template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/cards.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cards.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- forum -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Forum</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/forum.png" alt="Hero template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/forum.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/forum.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- insta album -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>InstaAlbum</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/instaalbum.png" alt="Landing template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/instaAlbum.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/instaAlbum.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- landing -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Landing</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/landing.png" alt="Landing template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/landing.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/landing.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+
+          </div>
+          <div class="column is-4">
+            <!-- band -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Band</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/band.png" alt="Band template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/band.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/band.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- cheatsheet -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Cheatsheet</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="https://dummyimage.com/555x255/000/fff" alt="Cheatsheet template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/cheatsheet.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cheatsheet.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- hero -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Hero</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/hero.png" alt="Hero template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/hero.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/hero.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--kanban -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Kanban</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/kanban.png" alt="Kanban template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/kanban.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/kanban.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- login -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Login</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/login.png" alt="Login template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/login.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/login.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
+          <div class="column is-4">
+            <!-- blog -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Blog</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">WIP</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/blog.png" alt="Blog template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/blog.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/blog.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!-- cover -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Cover</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/cover.png" alt="Cover template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/cover.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/cover.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--inbox -->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Inbox</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">Mobile</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/inbox.png" alt="Inbox template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/inbox.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/inbox.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--kanban with functional search-->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Kanban with Search box</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="../images/kanban2.png" alt="Kanban template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/kanban[search].html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/kanban[search].html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+            <!--tabs-->
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <span>Modal Cards</span>
+                  <span class="is-pulled-right">
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-default">?</span>
+                  </span>
+                </p>
+              </header>
+              <div class="card-content">
+                <figure class="image">
+                  <img src="https://dummyimage.com/555x255/000/fff" alt="modal-cards template screenshot">
+                </figure>
+              </div>
+              <footer class="card-footer">
+                <a href="templates/modal-cards.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/dansup/bulma-templates/blob/master/templates/modal-cards.html" class="card-footer-item">Source
+                  Code</a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievement Level -->
+  <!-- <section class="section">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Tweets</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Following</p>
+          <p class="title">123</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Followers</p>
+          <p class="title">456K</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Likes</p>
+          <p class="title">789</p>
+        </div>
+      </div>
+    </nav>
+  </section> -->
+
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h3 class="title is-2">Contact</h3>
+        <h4 class="subtitle is-5">Get in touch</h4>
+      </div>
+      <br>
+
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div class="box">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Enter Name">
               </div>
             </div>
-            <a href="#Conclusion" class="navbar-item">Conclusion</a>       
-            <a href="#Reference" class="navbar-item">Reference</a> 
+
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left">
+                <input class="input" type="email" placeholder="Enter Email" value="">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" placeholder="Enter Message"></textarea>
+              </div>
+            </div>
+
+            <div class="field is-grouped has-text-centered">
+              <div class="control">
+                <button class="button is-link is-large"><span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Submit</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-  </div>
-</div>
-    </nav>
-<!-- navbar finish -->
+  </section>
 
-<!-- Enter Text here -->
-<div class="content has-text-centered">
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container"><br>
-        <h1 class="title has-text-weight-bold">
-          Air Pollution around the world<br> .................................................................</h1>
-</div> <center><img src="https://i.imgur.com/0CWTqfM.png"  class= "image is-128x128"></a></center>
-
-
-      </div>
-    </section>
-
-    <section class="hero is-link"><a name="Introduction"></a>
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title has-text-weight-bold" >Introduction <br> ............................. </h2>
-          <p class="has-text-left">The scenario given is about air pollution in different countries around the world. Data regarding the pollution of air of 27 countries has been collected. Reliable and valid websites such as knoema.com, Wikipedia etc. are used for the data collection to ensure the accuracy and reliability of the data. The data collection is gathered from multiple countries with varying environmental conditions, thus increases the reliability of the data. The objective of gathering this information is to observe any relationships or patterns between the collected data, hence presenting any evidence to support or refute the hypothesis generated. Remarkably, there are two hypotheses generated prior to the data analysis which is "Higher GDP per capita could lead to higher CO2 emission rate because there will be more vehicles" and "Larger number of registered vehicles could cause the CO2 emission rate to increase as more CO2 would be released".</p>
-
-
-        </div>
-      </div>
-    </section><a name="hope"></a>
-    <section class="hero is-info">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title has-text-weight-bold " >Hypotheses <i class="fas fa-book"></i><br> ............................. </h2>
-
-          <!-- Table Here -->
-            <table class="table is-bordered ">
-              <thead>           
-                <p class="has-text-left box is-rounded is-fixed "><span class="has-text-weight-bold">Hypothesis :</span> Higher GDP per capita will lead to higher CO2 emission rate because there will be more vehicles. </p>
-
-              </thead>    
-            <tbody>
-              <tr>
-                <th>Prediction</th>
-                <td>Higher GDP per capita will lead to higher CO2 emission rate.</td>
-              </tr>
-              <tr>
-                <th>Variable 1  </th>
-                <td>Country's GDP per capita</a></td>
-              </tr>
-              <tr>
-                <th>Variable 2  </th>
-                <td>Average CO2 emission rate</a></td>
-              </tr>         
-              <tr>
-                <th>Reason   </th>
-                <td>There will be more vehicles as the GDP per capita increases.</a></td>
-              </tr>                         
-            </tbody>
-            </table>
-          <!-- Table Finish -->
-          <!-- Table Here --> 
-            <table class="table is-bordered is-hoverable ">
-              <thead>           
-                <p class="has-text-left box"><span class="has-text-weight-bold">Hypothesis 2:</span> Larger number of registered vehicles could cause the CO2 emission rate to increase as more CO2 would be released.</p>
-              </thead>    
-            <tbody>
-              <tr>
-                <th>Prediction</th>
-                <td>Larger number of registered vehicles could cause the CO2 emission rate to increase.</td>
-              </tr>
-              <tr>
-                <th>Variable 1  </th>
-                <td>Number of registered vehicles</a></td>
-              </tr>
-              <tr>
-                <th>Variable 2  </th>
-                <td>Average CO2 emission rate</a></td>
-              </tr>         
-              <tr>
-                <th>Reason   </th>
-                <td>More CO2 would be released by the cars.</a></td>
-              </tr>                
-            </tbody>
-            </table>
-          <!-- Table Finish -->          
-        </div>
-      </div>
-    </section>  
-    <section class="hero is-link"> <a name="Data Set"></a>
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title has-text-weight-bold">Data Set <br> ............................. </h2><br>
-	
-
-<p class="has-text-weight-bold subtitle"> Gathering techniques used </p>
-          <p class="has-text-left">The type of data gathered is secondary data which has been collected by another person. The source of the data regarding the GDP per capita, number of register vehicles and the CO2 emission rate are from reports research made by the government. The data collection is done using the monitored and observed websites. Thus, this reduces the possibility of gathering inaccurate data which may alter the outcome. </p>
-
-
-<!--List start-->
-<ul class="has-text-left"> 
-
-<li> <h5 class="title has-text-weight-bold">Observing</h5> 
-<p>Data regarding GDP per capita , the number of registered vehicles and the CO2 emission rate by country are obtained from Knoema which is a startup company that provides access to a large number of databases.</p> </li>  <br>
-
-<li> <h5 class="title has-text-weight-bold">Reporting</h5> 
-<p>Data regarding factors that causes the increase in the CO2 emission rates are searched online.
-
-</p> </li> 
-
-</ul>
-<!--List finish -->
-
-<p class="has-text-weight-bold subtitle">Raw Data </p>
-          <p class="has-text-left">The raw data that is gathered is classified as quantitative data.</p>
-
-
-
-<!--List start-->
-<ul class="has-text-left"> 
-
-<!-- hide qualitative data 
-<li> <h5 class="title has-text-weight-bold">Qualitative Data</h5> 
-<p>Placeholder Qualitative data does not involve numerical data and it can be categorized into three other data types; nominal, ordinal and binary Hence, nominal data is used to represent state data as there are no natural order in the categories and subjects are merely allocated to seperate categorizations.
-</p> </li>  <br>
-<table class="table table-bordered table-hover table-condensed">
-<thead><tr><td colspan="10" class="has-text-weight-bold"><center>Average CO2 emission rates<center> </td>
-
-<tr><th title="Field #1">Country</th> 
-<th title="Field #2">1990</th>
-<th title="Field #3">2000</th>
-<th title="Field #4">2005</th>
-<th title="Field #5">2010</th>
-<th title="Field #6">2011</th>
-<th title="Field #7">2012</th>
-<th title="Field #8">2013</th>
-<th title="Field #9">2014</th>
-<th title="Field #10">2015</th>
-</tr></thead>
-<tbody><tr>
-<td>Australia</td>
-<td align="right">261.00</td>
-<td align="right">335.00</td>
-<td align="right">402.00</td>
-<td align="right">422.00</td>
-<td align="right">412.00</td>
-<td align="right">406.00</td>
-<td align="right">371.00</td>
-<td align="right">370.00</td>
-<td align="right">371.00</td>
-</tr>
-<tr>
-<td>Antigua and Barbuda</td>
-<td align="right">3.10</td>
-<td align="right">1.20</td>
-<td align="right">0.80</td>
-<td align="right">8.10</td>
-<td align="right">9.80</td>
-<td align="right">9.70</td>
-<td align="right">21.00</td>
-<td align="right">22.00</td>
-<td align="right">22.00</td>
-</tr>
-<tr>
-<td>Argentina</td>
-<td align="right">103.00</td>
-<td align="right">138.00</td>
-<td align="right">153.00</td>
-<td align="right">188.00</td>
-<td align="right">195.00</td>
-<td align="right">196.00</td>
-<td align="right">185.00</td>
-<td align="right">188.00</td>
-<td align="right">190.00</td>
-</tr>
-<tr>
-<td>Australia</td>
-<td align="right">.30</td>
-<td align="right">.40</td>
-<td align="right">.40</td>
-<td align="right">.20</td>
-<td align="right">.20</td>
-<td align="right">.30</td>
-<td align="right">.20</td>
-<td align="right">.20</td>
-<td align="right">.20</td>
-</tr>
-<tr>
-<td>Barbados</td>
-<td align="right">3.90</td>
-<td align="right">6.50</td>
-<td align="right">11.00</td>
-<td align="right">16.00</td>
-<td align="right">19.00</td>
-<td align="right">14.00</td>
-<td align="right">15.00</td>
-<td align="right">15.00</td>
-<td align="right">16.00</td>
-</tr>
-</tbody></table>
- hide qualitative data -->
-
-<li> <h5 class="title has-text-weight-bold">Quantitative Data</h5> 
-
-<table class="table table-bordered table-hover table-condensed">
-<thead><tr><td colspan="10" class="has-text-weight-bold"><center> CO2 emission rates<center> </td>
-
-<tr><th title="Field #1">Country</th> 
-<th title="Field #2">1990</th>
-<th title="Field #3">2000</th>
-<th title="Field #4">2005</th>
-<th title="Field #5">2010</th>
-<th title="Field #6">2011</th>
-<th title="Field #7">2012</th>
-<th title="Field #8">2013</th>
-<th title="Field #9">2014</th>
-<th title="Field #10">2015</th>
-</tr></thead>
-<tbody><tr>
-<td>Afghanistan</td>
-<td align="right">0.30</td>
-<td align="right">0.40</td>
-<td align="right">0.40</td>
-<td align="right">0.20</td>
-<td align="right">0.20</td>
-<td align="right">0.30</td>
-<td align="right">0.20</td>
-<td align="right">0.20</td>
-<td align="right">0.20</td>
-</tr>
-<tr>
-<td>Antigua and Barbuda</td>
-<td align="right">3.10</td>
-<td align="right">1.20</td>
-<td align="right">0.80</td>
-<td align="right">8.10</td>
-<td align="right">9.80</td>
-<td align="right">9.70</td>
-<td align="right">21.00</td>
-<td align="right">22.00</td>
-<td align="right">22.00</td>
-</tr>
-<tr>
-<td>Argentina</td>
-<td align="right">103.00</td>
-<td align="right">138.00</td>
-<td align="right">153.00</td>
-<td align="right">188.00</td>
-<td align="right">195.00</td>
-<td align="right">196.00</td>
-<td align="right">185.00</td>
-<td align="right">188.00</td>
-<td align="right">190.00</td>
-</tr>
-<tr>
-<td>Australia</td>
-<td align="right">261.00</td>
-<td align="right">335.00</td>
-<td align="right">402.00</td>
-<td align="right">422.00</td>
-<td align="right">412.00</td>
-<td align="right">406.00</td>
-<td align="right">371.00</td>
-<td align="right">370.00</td>
-<td align="right">371.00</td>
-</tr>
-<tr>
-<td>Barbados</td>
-<td align="right">3.90</td>
-<td align="right">6.50</td>
-<td align="right">11.00</td>
-<td align="right">16.00</td>
-<td align="right">19.00</td>
-<td align="right">14.00</td>
-<td align="right">15.00</td>
-<td align="right">15.00</td>
-<td align="right">16.00</td>
-</tr>
-</tbody></table>
-<p class="has-text-centered"><span class="has-text-weight-bold">Figure 1</span>: Sample quantitative data (Discrete data)</p>
-
-
-</p> </li> 
-
-</ul>
-<!--List finish -->
-
-        </div>
-      </div>
-    </section>
-    <section class="hero is-info"><a name="Data Analysis"></a> <a name="Hypothesis 1"></a>
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title has-text-weight-bold">Data Analysis <i class="fas fa-file"></i>  <br> ............................. </h2> 
-          <br>
-          <p class="has-text-centered subtitle has-text-weight-bold " >Hypothesis 1</p>          
-          <p class="subtitle">Higher GDP per capita will lead to higher CO2 emission rate because there will be more vehicles. </p>
-          <p class="has-text-left bold"><span class="has-text-weight-bold">EXPLANATION: </span>The hypothesis is generated to study whether it is true or false that the GDP per capita of a country will affect the CO2 emission rate. GDP per capita is the gross domestic product divided by the number of people in that country, which measures the value of economic activity within a country. </p>     
-          <p class="has-text-left bold"><span class="has-text-weight-bold">IMPORTANCE : </span>The hypothesis is important as it can prove that the GDP per capita could affect the CO2 emission rate. That being the case, various steps could be taken to control the GDP per capita so that the CO2 emission rate could be controlled.</p>
-          <p class="has-text-left bold"><span class="has-text-weight-bold">RESULTS : </span>The GDP per capita and the CO2 emission rate of each country is obtained from reporting. This data is then compared between one another to observe the relationship between these two variables. </p>
-<!--Table start-->
-<table class="table table-bordered table-hover table-condensed" style="width: 100%; height:1%">
-<thead><tr><th title="Field #1">Country</th>
-<th title="Field #2">Average CO2 emission rates</th>
-<th title="Field #3">GDP per capita(Int$)</th>
-</tr></thead>
-<tbody><tr>
-<td> Afghanistan </td>
-<td align="right">0.27</td>
-<td>1,800</td>
-</tr>
-<tr>
-<td> Antigua and Barbuda</td>
-<td align="right">10.86</td>
-<td>73,879</td>
-</tr>
-<tr>
-<td> Argentina</td>
-<td align="right">170.67</td>
-<td>71,943</td>
-</tr>
-<tr>
-<td> Australia</td>
-<td align="right">372.22</td>
-<td>62,425</td>
-</tr>
-<tr>
-<td> Barbados</td>
-<td align="right">12.93</td>
-<td>52,941</td>
-</tr>
-<tr>
-<td> Burundi</td>
-<td align="right">1.08</td>
-<td>41,675</td>
-</tr>
-<tr>
-<td> China</td>
-<td align="right">3.99</td>
-<td>34,802</td>
-</tr>
-<tr>
-<td> Costa Rica</td>
-<td align="right">1.6</td>
-<td>31,638</td>
-</tr>
-<tr>
-<td> Dominican Republic</td>
-<td align="right">7.21</td>
-<td>27,916</td>
-</tr>
-<tr>
-<td> Grenada</td>
-<td align="right">6.01</td>
-<td>20,329</td>
-</tr>
-<tr>
-<td> Guatemala</td>
-<td align="right">2.77</td>
-<td>19,631</td>
-</tr>
-<tr>
-<td> Guinea-Bissau</td>
-<td align="right">2.58</td>
-<td>18,765</td>
-</tr>
-<tr>
-<td> Honduras</td>
-<td align="right">2.46</td>
-<td>18,149</td>
-</tr>
-<tr>
-<td> Jamaica</td>
-<td align="right">4.52</td>
-<td>15,484</td>
-</tr>
-<tr>
-<td> Madagascar</td>
-<td align="right">48</td>
-<td>11,777</td>
-</tr>
-<tr>
-<td> Maldives</td>
-<td align="right">555.89</td>
-<td>10,754</td>
-</tr>
-<tr>
-<td> Mauritius</td>
-<td align="right">3.46</td>
-<td>9,648</td>
-</tr>
-<tr>
-<td> Niger</td>
-<td align="right">1.59</td>
-<td>7,213</td>
-</tr>
-<tr>
-<td> Panama</td>
-<td align="right">0.26</td>
-<td>6,611</td>
-</tr>
-<tr>
-<td> Saint Lucia</td>
-<td align="right">0.37</td>
-<td>4,641</td>
-</tr>
-<tr>
-<td> Senegal</td>
-<td align="right">30</td>
-<td>3,950</td>
-</tr>
-<tr>
-<td> Seychelles</td>
-<td align="right">10.76</td>
-<td>3,869</td>
-</tr>
-<tr>
-<td> Sudan</td>
-<td align="right">18.56</td>
-<td>2,712</td>
-</tr>
-<tr>
-<td> Tanzania</td>
-<td align="right">9.44</td>
-<td>2,211</td>
-</tr>
-<tr>
-<td> Tunisia</td>
-<td align="right">6.06</td>
-<td>1,899</td>
-</tr>
-<tr>
-<td> Uganda</td>
-<td align="right">18</td>
-<td>1,715</td>
-</tr>
-<tr>
-<td>Zambia</td>
-<td align="right">7.2</td>
-<td>4,050</td>
-</tr>
-</tbody></table>
-<!-- Table Finish -->
-<p class="has-text-centered"><span class="has-text-weight-bold">Figure 2</span>: Summary of Average CO2 emission rates vs GDP per capita</p>
-          <p class="has-text-left bold"><span class="has-text-weight-bold">JUSTIFICATION  : </span>By observing the graph, it could be seen that some countries with a higher GDP per capita has a lower CO2 emission rate while some countries with a lower GDP per capita has a higher CO2 emission rate. This means that the GDP per capita of a country does not affect the CO2 emission rate. Hence, this manifests that the data refutes the hypothesis. </p>
-
-<div class="infogram-embed" data-id="4e8259c3-5794-4ca1-9c71-d61f4e1f3a61" data-type="interactive" data-title="Air Pollution Average CO2 emission rates vs GDP per capita"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t)[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=d+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/4e8259c3-5794-4ca1-9c71-d61f4e1f3a61" style="color:#989898!important;text-decoration:none!important;" target="_blank">Air Pollution Average CO2 emission rates vs GDP per capita</a><br><a name="Hypothesis 2"></a><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
-<p class="has-text-centered"><span class="has-text-weight-bold">Figure 3</span>: Average CO2 emission rates and GDP per capita</p>        
-        <div class="container"> 
-
-          
-<hr>
-          <p class="has-text-centered subtitle has-text-weight-bold " ><br>Hypothesis 2</p>          
-          <p class="subtitle">Larger number of registered vehicles could cause the CO2 emission rate to increase as more CO2 would be released. </p>
-          <p class="has-text-left bold"><span class="has-text-weight-bold">EXPLANATION: </span>The hypothesis is generated to study whether it is true or false that the number of registered vehicles in a country will affect its CO2 emission. </p>     
-          <p class="has-text-left bold"><span class="has-text-weight-bold">IMPORTANCE : </span>The hypothesis is important as it can prove that the number of registered vehicles could affect the CO2 emission rate. That being the case, various steps could be taken to maintain the number of registered vehicles so that the CO2 emission rate could be reduced.</p>
-          <p class="has-text-left bold"><span class="has-text-weight-bold">RESULTS : </span>The number of registered vehicles and the CO2 emission rate of each country is obtained from reporting. This data is then compared between one another to observe the relationship between these two variables. </p>
-
-<hr>
-
-<table class="table table-bordered table-hover table-condensed" style="width: 100%; height:1%">
-<thead><tr><th title="Field #1">Country</th>
-<th title="Field #2">Average CO2 emission rates</th>
-<th title="Field #3">Number of registered vehicles</th>
-</tr></thead>
-<tbody><tr>
-<td> Afghanistan</td>
-<td align="right">0.27</td>
-<td align="right">655357</td>
-</tr>
-<tr>
-<td> Antigua and Barbuda</td>
-<td align="right">10.86</td>
-<td align="right">29989</td>
-</tr>
-<tr>
-<td> Argentina</td>
-<td align="right">170.67</td>
-<td align="right">23120241</td>
-</tr>
-<tr>
-<td>Australia</td>
-<td align="right">372.22</td>
-<td align="right">17180596</td>
-</tr>
-<tr>
-<td> Barbados</td>
-<td align="right">12.93</td>
-<td align="right">112118</td>
-</tr>
-<tr>
-<td> Burundi</td>
-<td align="right">1.08</td>
-<td align="right">21589</td>
-</tr>
-<tr>
-<td> China</td>
-<td align="right">3.99</td>
-<td align="right">250138212</td>
-</tr>
-<tr>
-<td> Costa Rica</td>
-<td align="right">1.6</td>
-<td align="right">1759341</td>
-</tr>
-<tr>
-<td> Dominican Republic</td>
-<td align="right">7.21</td>
-<td align="right">3215773</td>
-</tr>
-<tr>
-<td> Grenada</td>
-<td align="right">6.01</td>
-<td align="right">5765</td>
-</tr>
-<tr>
-<td> Guatemala</td>
-<td align="right">2.77</td>
-<td align="right">2562925</td>
-</tr>
-<tr>
-<td> Guinea-Bissau</td>
-<td align="right">2.58</td>
-<td align="right">62239</td>
-</tr>
-<tr>
-<td> Honduras</td>
-<td align="right">2.46</td>
-<td align="right">1378050</td>
-</tr>
-<tr>
-<td> Jamaica</td>
-<td align="right">4.52</td>
-<td align="right">518239</td>
-</tr>
-<tr>
-<td> Madagascar</td>
-<td align="right">48</td>
-<td align="right">219576</td>
-</tr>
-<tr>
-<td> Maldives</td>
-<td align="right">555.89</td>
-<td align="right">61412</td>
-</tr>
-<tr>
-<td> Mauritius</td>
-<td align="right">3.46</td>
-<td align="right">443495</td>
-</tr>
-<tr>
-<td> Niger</td>
-<td align="right">1.59</td>
-<td align="right">315600</td>
-</tr>
-<tr>
-<td> Panama</td>
-<td align="right">0.26</td>
-<td align="right">1004669</td>
-</tr>
-<tr>
-<td> Saint Lucia</td>
-<td align="right">0.37</td>
-<td align="right">1569</td>
-</tr>
-<tr>
-<td> Senegal</td>
-<td align="right">30</td>
-<td align="right">401910</td>
-</tr>
-<tr>
-<td> Seychelles</td>
-<td align="right">10.76</td>
-<td align="right">18606</td>
-</tr>
-<tr>
-<td> Sudan</td>
-<td align="right">18.56</td>
-<td align="right">320974</td>
-</tr>
-<tr>
-<td> Tanzania</td>
-<td align="right">9.44</td>
-<td align="right">1509786</td>
-</tr>
-<tr>
-<td> Tunisia</td>
-<td align="right">6.06</td>
-<td align="right">1735339</td>
-</tr>
-<tr>
-<td> Uganda</td>
-<td align="right">18</td>
-<td align="right">1228425</td>
-</tr>
-<tr>
-<td>Zambia</td>
-<td align="right">7.2</td>
-<td align="right">534532</td>
-</tr>
-</tbody></table>
-<p class="has-text-centered"><span class="has-text-weight-bold">Figure 4</span>: Summary of Average CO2 emission rates vs Number of vehicle registered</p>
-       
-          <p class="has-text-left bold"><span class="has-text-weight-bold">JUSTIFICATION  : </span>By observing the graph, it could be seen that some countries with a higher number of registered vehicles has a lower CO2 emission rate while some counrties with a lower number of registered vehicles has a higher CO2 emission rate. This means that the number of registered vehicles does not affect the CO2 emission rate of a country. Hence, this manifests that the data refutes the hypothesis. </p>
-
-<div class="infogram-embed" data-id="bacae6a8-3aea-4245-89c6-d2f55c53d7b3" data-type="interactive" data-title="Air Pollution Average CO2 emission rates vs Number of Vehicles"></div><script>!function(e,t,n,s){var i="InfogramEmbeds",o=e.getElementsByTagName(t)[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(s)&&(s=d+s),window[i]&&window[i].initialized)window[i].process&&window[i].process();else if(!e.getElementById(n)){var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/bacae6a8-3aea-4245-89c6-d2f55c53d7b3" style="color:#989898!important;text-decoration:none!important;" target="_blank">Air Pollution Average CO2 emission rates vs Number of Vehicles</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
-<p class="has-text-centered"><span class="has-text-weight-bold">Figure 5</span>: Average CO2 emission rates and Number of vehicle registered </p>     
-    </section>
-    <section class="hero is-success"><a name="Conclusion"></a>
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title has-text-weight-bold" >Conclusion <br> ............................. </h2>
-          <p class="has-text-left">In conclusion, based on all the analysis that has been constructed, it can be concluded that the hypotheses can be refuted as the GDP per capita and the number of registered vehicles of a country does not affect the CO2 emission rate. This is because a high GDP per capita does not necessarily results in a high number of registered vehicles. Besides that, vehicles are not the only thing that emits CO2 as CO2 could be produced by factories, volcanic eruptions etc. Therefore, the hypothesis is not accepted.
-
-</p>
-        </div>
-      </div>
-    </section>
-        <section class="hero is-primary"> <a name="Reference"></a>
-      <div class="hero-body">
-        <div class="container">          
-          <h2 class="title has-text-weight-bold" >Data Sources<br> .............................</h2>
-          <p class="has-text-left ">
-            <span class="has-text-weight-bold">References</span><br> 
-            <br> Knoema. (2018). International Energy Data, Monthly Update - knoema.com. [online] Available at: 
-            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
-            https://knoema.com/EIAINTL2018May/international-energy-data-monthly-update [Accessed 6 Sep. 2018]. 
-            <br>
-            Wikipedia.org. (2018). List of countries by GDP per capita (PPP) per capita. [online] Available at: 
-            <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
-             https://en.wikipedia.org/wiki/List_of_countries_by_GDP per capita_(PPP)_per_capita  [Accessed 6 Sep. 2018].
-       
-         	<br>
-			Registered vehicles - Data by country. (2018). Retrieved from 
-         	<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
-         	http://apps.who.int/gho/data/node.main.A995?lang=en          
-        </div>
-
-      </div>
-    </section>
-
-    <section class="hero is-primary">
-      <div class="hero-body">
-        <div class="container">
-             <hr>
-          <h2 class="title has-text-weight-bold">Data Science Report
- <br> ......................................... </h2>
-          <p class="has-text-centered ">
-            <span class="has-text-weight-bold">Ng Wei Yuen</span><br>group member<br>17109182<br> 17109182@imail.sunway.edu.my</p>
-
-          <p class="has-text-centered ">
-            <span class="has-text-fweight-bold">Chia Li Hong</span><br>group member<br>18017921<br> 18017921@imail.sunway.edu.my</p>
-
-        </div>
-      </div>
-    </section>
-</div>      
-</div>
-
-
-
-<!-- Enter Text finish -->
-
-  
-
-<!--JS here -->
-    <script type="text/javascript">
-      (function() {
-        var burger = document.querySelector('.burger');
-        var nav = document.querySelector('#'+burger.dataset.target);
-        burger.addEventListener('click', function(){
-          burger.classList.toggle('is-active');
-          nav.classList.toggle('is-active');
-
-        });
-      })();
-      var dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function(event) {
-  event.stopPropagation();
-  dropdown.classList.toggle('is-active');
-});
-
-// Inverted colors 
-/*
-        javascript: (
-function () { 
-// the css we are going to inject
-var css = 'html {-webkit-filter: invert(100%);' +
-    '-moz-filter: invert(100%);' + 
-    '-o-filter: invert(100%);' + 
-    '-ms-filter: invert(100%); }',
-
-head = document.getElementsByTagName('head')[0],
-style = document.createElement('style');
-
-// a hack, so you can "invert back" clicking the bookmarklet again
-if (!window.counter) { window.counter = 1;} else  { window.counter ++;
-if (window.counter % 2 == 0) { var css ='html {-webkit-filter: invert(0%); -moz-filter:    invert(0%); -o-filter: invert(0%); -ms-filter: invert(0%); }'}
- };
-
-style.type = 'text/css';
-if (style.styleSheet){
-style.styleSheet.cssText = css;
-} else {
-style.appendChild(document.createTextNode(css));
-}
-
-//injecting the css to the head
-head.appendChild(style);
-}());*/
-
-    </script>
-
-<!--JS end -->
-  
-
-
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="section-heading">
+      <p>
+        <strong>Thank you for viewing My Portfolio Site</strong>
+      </p>
+    </div>
+  </footer>
 </body>
+
 </html>
